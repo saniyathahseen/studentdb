@@ -7,9 +7,9 @@
 
   </head>
 
-  <body background="r.jpg";
+  <body background="r.jpg";>
 
-  <form action="#" name="StudentRegistration" onSubmit="return(validation());" style="margin-top: 90px;">
+  <form action="registration.php" method="post" >
 
 <table cellpadding="2" width="50%"  align="center"
 
@@ -38,7 +38,7 @@
 
   <td>First Name</td>
 
-  <td><input type="text" name="paddress" id="paddress" size="30"></td>
+  <td><input type="text" name="fstnm" id="paddress" size="30"></td>
 
   </tr>
 
@@ -47,7 +47,7 @@
 
   <td>Last Name</td>
 
-  <td><input type="text" name="personaladdress"
+  <td><input type="text" name="lstnm"
 
   id="personaladdress" size="30"></td>
 
@@ -76,7 +76,7 @@
 
   <td>City</td>
 
-  <td><select name="City">
+  <td><select name="city">
 
   <option value="-1" selected>select..</option>
 
@@ -95,7 +95,7 @@
 
     <td>District</td>
   
-    <td><select name="District">
+    <td><select name="district">
   
     <option value="-1" selected>select..</option>
   
@@ -115,7 +115,7 @@
 
     <td>State</td>
   
-    <td><select Name="State">
+    <td><select Name="state">
   
     <option value="-1" selected>select..</option>
   
@@ -135,7 +135,7 @@
 
   <td>Course</td>
 
-  <td><select name="Course">
+  <td><select name="course">
 
   <option value="-1" selected>select..</option>
 
@@ -156,19 +156,16 @@
 
     <td>Date Of Joining</td>
   
-    <td><input type="text" name="doj" id="dob" size="30"></td>
+    <td><input type="text" name="doj" id="doj" size="30"></td>
   
     </tr>
 
 
 
 
-  <td>PinCode</td>
-
-  <td><input type="text" name="pincode" id="pincode" size="30"></td>
+  
 
 
-</tr>
 
   <tr>
 
