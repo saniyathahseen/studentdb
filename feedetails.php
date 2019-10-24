@@ -8,11 +8,11 @@
 
   <body style="background-image: url('fee-bicubic.jpg')" >
 
-  <form action="#" name="fee details" onSubmit="return(validate());" style="margin: 95px;">
+  <form action="feeins.php" name="fee details" method="post"; style="margin: 95px;">
 
-<table cellpadding="8" width="40%"  align="center"
+<table cellpadding="6" width="40%"  align="center"
 
-  cellspacing="7">
+  cellspacing="4">
 
 
 <tr>
@@ -37,7 +37,7 @@
 
     <td>Date</td>
   
-    <td><input type="text" name="fdate" id="date" size="30"></td>
+    <td><input type="date" name="fdate" id="date" size="30"></td>
   
     </tr>
   
@@ -126,8 +126,8 @@
 
   <td colspan="0"><input type="submit" value="Submit" /></td>
 
-  <td colspan="0">
-    <input type="button">Go to HomePage</td>
+  <td colspan="1">
+    <input type="button" value="Go to HomePage"></td>
 
   </tr>
 
