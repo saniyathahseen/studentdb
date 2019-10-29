@@ -1,5 +1,5 @@
 <?php
-$link=mysqli_connect("localhost","root","","studentdetails");
+$link=mysqli_connect("localhost","root","","studdb");
 if(!$link)
 {
     die ("couldn't connect". mysqli_connect_error());
