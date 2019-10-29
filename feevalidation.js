@@ -1,24 +1,24 @@
 function validate()
 { 
-   if( document.FeeDetails.textnames.value == "" )
+   if( document.feedetails.textnames.value == "" )
    {
      alert( "Please provide a fee number!" );
-     document.FeeDetails.textnames.focus() ;
+     document.feedetails.textnames.focus() ;
      return false;
    }
-   if( document.FeeDetails.fdate.value == "" )
+   if( document.feedetails.fdate.value == "" )
    {
      alert( "Please provide a date!" );
-     document.FeeDetails.fdate.focus() ;
+     document.feedetails.fdate.focus() ;
      return false;
    }
    
-   if( document.FeeDetails.regno.value == "" ||
-           isNaN( document.FeeDetails.regno.value) ||
-           document.FeeDetails.regno.value.length != 10 )
+   if( document.feedetails.regno.value == "" ||
+           isNaN( document.feedetails.regno.value) ||
+           document.feedetails.regno.value.length != 10 )
    {
      alert( "Please provide a Register number in the format 123." );
-     document.FeeDetails.regno.focus() ;
+     document.feedetails.regno.focus() ;
      return false;
    }
    /*if( document.FeeDetails.studname.value == "" )
@@ -32,24 +32,24 @@ function validate()
    alert ( "Please choose your Gender: Male or Female" );
    return false;
    }  */ 
-   if( document.FeeDetails.Semester.value == "-1" )
+   if( document.feedetails.Semester.value == "-1" )
    {
      alert( "Please Choose a semester!" );
-     document.FeeDetails.Semester.focus() ;
+     document.feedetails.Semester.focus() ;
      return false;
    }   
-   if( document.FeeDetails.Course.value == "-1" )
+   if( document.feedetails.Course.value == "-1" )
    {
      alert( "Please provide your Course!" );
     
      return false;
    }   
-   if( document.FeeDetails.amt.value == "" ||
-   isNaN( document.FeeDetails.amt.value) ||
-   document.FeeDetails.amt.value.length != 7 )
+   if( document.feedetails.amt.value == "" ||
+   isNaN( document.feedetails.amt.value) ||
+   document.feedetails.amt.value.length != 7 )
 {
 alert( "Please provide the amount paid." );
-document.FeeDetails.amt.focus() ;
+document.feedetails.amt.focus() ;
 return false;
 } 
    /*if( document.StudentRegistration.State.value == "-1" )

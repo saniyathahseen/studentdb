@@ -6,9 +6,10 @@
 
   </head>
 
-  <body style="background-image: url('fee-bicubic.jpg')" >
+  <body style="background-image: url('fee-bicubic.jpg')" onload="document.fee details.textnames.focus();">
 
-  <form action="feeins.php" name="fee details" method="post"; style="margin: 95px;">
+  <form action="feeins.php" name="feedetails" method="post"; style="margin: 95px;"  onSubmit="return (validate());">
+ 
 
 <table cellpadding="6" width="40%"  align="center"
 
