@@ -11,9 +11,7 @@
 
   <form action="registration.php" method="post" >
 
-<table cellpadding="2" width="50%"  align="center"
-
-  cellspacing="5">
+<table cellpadding="2" width="50%"  align="center" cellspacing="5">
 
 
 <tr>
