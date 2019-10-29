@@ -113,7 +113,7 @@
 
     <td>State</td>
   
-    <td><select Name="state">
+    <td><select name="state">
   
     <option value="-1" selected>select..</option>
   
@@ -133,7 +133,7 @@
 
   <td>Course</td>
 
-  <td><select name="course">
+  <td><select name="nmecor">
 
   <option value="-1" selected>select..</option>
 
