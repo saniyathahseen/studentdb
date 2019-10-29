@@ -39,7 +39,7 @@
         <ul class="dropdown-menu">
           <li><a href="#">Student Details</a></li>
           <li><a href="#">Fee Details</a></li>
-          <li><a href="#">Due Details</a></li>
+         
           
         </ul>
       </li>
@@ -48,7 +48,7 @@
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Forms
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Add Fee Details</a></li>
+          <li><a href="feedetails.php">Add Fee Details</a></li>
           <li><a href="#">Add Marks</a></li>
          
           

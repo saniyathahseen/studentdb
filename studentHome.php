@@ -36,18 +36,20 @@
               <span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
-              <li><a href="#">Student Details</a></li>
+              <li><a href="#">View Prifile</a></li>
               <li><a href="#">Fee Details</a></li>
-              <li><a href="#">Due Details</a></li>
+              <li><a href="#">Mark Details</a></li>
+
+              
             </ul>
           </li>
           <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Forms
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Edit
               <span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
-              <li><a href="#">Add Fee Details</a></li>
-              <li><a href="#">Add Marks</a></li>
+              <li><a href="#">Edit Details</a></li>
+         
             </ul>
           </li>
         </ul>

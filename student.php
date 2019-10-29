@@ -129,25 +129,25 @@
   
     </tr>
 
-<tr>
+    <tr>
 
-  <td>Course</td>
+<td>Course</td>
 
-  <td><select name="nmecor">
+<td><select name="namecrs">
 
-  <option value="-1" selected>select..</option>
+<option value="-1" selected>select..</option>
 
-  <option value="B.Tech">B.TECH</option>
+<option value="B.TECH">B.TECH</option>
 
-  <option value="MCA">MCA</option>
+<option value="M.TECH">M.TECH</option>
 
-  <option value="MBA">MBA</option>
+<option value="MCA">MCA</option>
 
-  <option value="BCA">BCA</option>
+<option value="not mentioned">OTHER</option>
 
-  </select></td>
+</select></td>
 
-  </tr>
+</tr>
 
 
   <tr>
