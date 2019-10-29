@@ -11,9 +11,7 @@
 
   <form action="registration.php" method="post" >
 
-<table cellpadding="2" width="50%"  align="center"
-
-  cellspacing="5">
+<table cellpadding="2" width="50%"  align="center" cellspacing="5">
 
 
 <tr>
@@ -80,13 +78,13 @@
 
   <option value="-1" selected>select..</option>
 
-  <option value="New Delhi">KOLLAM</option>
+  <option value="Kollam">KOLLAM</option>
 
-  <option value="Mumbai">KARUNAGAPPALLY</option>
+  <option value="Karunagappally">KARUNAGAPPALLY</option>
 
-  <option value="Goa">ANCHAL</option>
+  <option value="Anchal">ANCHAL</option>
 
-  <option value="Patna">OTHER</option>
+  <option value="not mentioned">OTHER</option>
 
   </select></td>
 
@@ -99,13 +97,13 @@
   
     <option value="-1" selected>select..</option>
   
-    <option value="Nalanda">KOLLAM</option>
+    <option value="Kollam">KOLLAM</option>
   
-    <option value="UP">TRIVANDRUM</option>
+    <option value="Trivandrum">TRIVANDRUM</option>
   
-    <option value="Goa">ALAPPUZHA</option>
+    <option value="Alappuzha">ALAPPUZHA</option>
   
-    <option value="Patna">OTHER</option>
+    <option value="not mentioned">OTHER</option>
   
     </select></td>
   
@@ -115,17 +113,17 @@
 
     <td>State</td>
   
-    <td><select Name="state">
+    <td><select name="state">
   
     <option value="-1" selected>select..</option>
   
-    <option value="New Delhi">KERALA</option>
+    <option value="Kerala">KERALA</option>
   
-    <option value="Mumbai">TAMILNADU</option>
+    <option value="Tamilnadu">TAMILNADU</option>
   
     <option value="Goa">GOA</option>
   
-    <option value="Bihar">OTHER</option>
+    <option value="not mentioned">OTHER</option>
   
     </select></td>
   
@@ -135,7 +133,7 @@
 
   <td>Course</td>
 
-  <td><select name="course">
+  <td><select name="nmecor">
 
   <option value="-1" selected>select..</option>
 
