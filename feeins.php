@@ -11,7 +11,7 @@ $conn=mysqli_connect("localhost","root","","studdb") or die("failed:".mysqli_con
 $feeinto=mysqli_query($conn,"insert into fees(Fee_no,Date,Reg_No,Student_Name,Semester,Course,Amount) values('$fno','$fdte','$rno','$sname','$sem','$course','$amount')") or die(mysqli_error($conn));
 if($feeinto)
 echo '<script language="javascript">';
-echo 'alert("message successfully sent")';
+echo 'alert("Saved successfully ")';
 echo '</script>';
 $conn->close();
 ?>
