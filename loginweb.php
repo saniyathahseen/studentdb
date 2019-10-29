@@ -74,14 +74,14 @@ input[type=text]:focus, input[type=password]:focus {
 
     <tr><td colspan="4" align="center"><marquee><h2><b><i>Login HERE....</b></i></h2></marquee></td></tr>
 
- <form action="/action_page.php" class="container">
+ <form action="login.php" method="post"class="container">
     <h1>Login</h1>
 
     <label for="Username"><b>User Name</b></label>
-    <input type="text" placeholder="Enter User Name" name="Username" required>
+    <input type="text" placeholder="Enter User Name" name="username" required>
 
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input type="password" placeholder="Enter Password" name="password" required>
 
     <button type="submit" class="btn">Login</button>
 
