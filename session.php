@@ -1,5 +1,5 @@
 <?php
-   $link=mysqli_connect("localhost","root","","studentdetails");
+   $link=mysqli_connect("localhost","root","","studdb");
    session_start();
    
    $user_check = $_SESSION['login_user'];
