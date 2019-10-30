@@ -18,7 +18,7 @@ $conn=mysqli_connect("localhost","root","","studdb") or die("failed:" . mysqli_c
 $sql1=mysqli_query($conn,"insert into student (Reg_No,F_name,L_name,DOB,Sex,City,District,State,Course,DOJ,email,mob,username,password) values ('$regno','$fname','$lname','$dob','$gndr','$city','$dis','$ste','$crse','$doj1','$email','$mob','$un','$pw')") or die(mysqli_error($conn));
 if($sql1)
 
-echo "<h1>Registered successfully</h1><a href='loginweb.html'>Log in</a>";
+include("loginweb.php");
 
 else
 echo "<h1>Registration failedy</h1><a href='student.php'>Log in</a>";

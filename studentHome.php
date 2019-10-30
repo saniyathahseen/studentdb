@@ -23,7 +23,7 @@
       }
     </style>
   </head>
-  <body background="gd.jpg">
+  <body background="1d.jpg">
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
