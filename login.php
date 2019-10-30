@@ -13,7 +13,7 @@ else
        if ( mysqli_num_rows($result) ==1)
         {
         
-        include("userHome.html");
+        include("studentHome.html");
 
         } 
         else 

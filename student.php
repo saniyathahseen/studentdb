@@ -3,13 +3,37 @@
 
   <head>
 
-  <script type="text/javascript" src="validation.js"></script>
+  <script>
+    function validate()
+{ 
+  var nm1=document.forms["student"]["fstnm"];
+  var nm2=document.forms["student"]["regnum"];
+  var nm3=document.forms["student"]["dob"];
+   if( nm1.value == "" )
+   {
+     window.alert( "Please provide your Name!" );
+     nm1.focus;
+     return false;
+   }
+   if( nm2.value == "" )
+   {
+     window.alert( "Please provide your Register number!" );
+     nm2.focus;
+     return false;
+   }
+   if ( ( nm3.sex[0].checked == false ) && ( nm3.sex[1].checked == false ) )
+   {
+   window.alert ( "Please choose your Gender: Male or Female" );
+   return false;
+   }   
+}
+  </script>
 
   </head>
 
   <body background="r.jpg";>
 
-  <form action="registration.php" method="post" >
+  <form action="registration.php" name="student" method="post" onSubmit="return validate()" >
 
 <table cellpadding="2" width="50%"  align="center" cellspacing="5">
 
