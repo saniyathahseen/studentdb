@@ -9,6 +9,7 @@
   var nm1=document.forms["student"]["fstnm"];
   var nm2=document.forms["student"]["regnum"];
   var nm3=document.forms["student"]["dob"];
+  var nm4=document.forms["student"]["dob"];
    if( nm1.value == "" )
    {
      window.alert( "Please provide your Name!" );
@@ -21,11 +22,17 @@
      nm2.focus;
      return false;
    }
-   if ( ( nm3.sex[0].checked == false ) && ( nm3.sex[1].checked == false ) )
+   if ( ( nm4.sex[0].checked == false ) && ( nm4.sex[1].checked == false ) )
    {
-   window.alert ( "Please choose your Gender: Male or Female" );
+   window.alert ( "Please choose your Gender" );
    return false;
    }   
+   if( nm3.value == "" )
+   {
+     window.alert( "Please provide your Date of birth!" );
+     nm1.focus;
+     return false;
+   }
 }
   </script>
 
