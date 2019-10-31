@@ -26,13 +26,36 @@ body, html {
 }
 
 /* Add styles to the form container */
-.container {
-  position:center;
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  
+}
+
+/* Control the right side */
+.right {
   right: 0;
-  margin: 20px;
-  max-width: 300px;
-  padding: 16px;
-  background-color: white;
+  
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 /* Full-width input fields */
@@ -65,29 +88,54 @@ input[type=text]:focus, input[type=password]:focus {
 }
 
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+
+  
+
+</script>
 </head>
 <body>
 
-<h2>Student Login</h2>
+<h1>Login</h1>
 <div class="bg-img">
+<tr>
+  <td colspan="4" align="center"><marquee><h2><b><i>Login HERE....</i></b></h2></marquee></td>
+</tr>
+<div class="split left">
+  <div class="centered">
+    <form action="login.php" method="post"style="background-color:white;">
+      <h2>Student Login</h2>
 
-
-    <tr><td colspan="4" align="center"><marquee><h2><b><i>Login HERE....</b></i></h2></marquee></td></tr>
-
- <form action="login.php" method="post"class="container">
-    <h1>Login</h1>
-
-    <label for="Username"><b>User Name</b></label>
+      <label for="Username"><b>User Name</b></label>
     <input type="text" placeholder="Enter User Name" name="username" required>
 
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="password" required>
 
-    <button type="submit" class="btn">Login</button>
+    <button  class="btn">Login</button>
 
   </form>
+  </div>
 </div>
 
+<div class="split right">
+  <div class="centered">
+  <form action="adminlogin.php" method="post"style="background-color:white;">
+    <h2>Admin Login</h2>
+
+    <label for="Username"><b>User Name</b></label>
+    <input type="text" placeholder="Enter User Name" name="username1" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password1" required>
+
+    <button  class="btn">Login</button>
+
+  </form>
+  </div>
+</div>
+</div>
 
 </body>
 </html>
