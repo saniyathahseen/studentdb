@@ -21,6 +21,11 @@
     .container p{
       line-height: 200px; 
       }
+      .marq{
+        color:red;
+        margin-left:100px;
+        margin-top:50px;
+      }
     </style>
   </head>
   <body background="1d.jpg">
@@ -65,6 +70,12 @@
         </form> 
       </div>
     </nav>
+    <div class="marq">
+<marquee width="40%" direction="left" height="30%">
+    Education is the most Powerful weapon 
+   which you can use to change the world
+  </marquee>
+  </div>
     <div class="fixed-footer">
       <div class="container">For More Info:Conatact:+91485679</div>  
       <center>
