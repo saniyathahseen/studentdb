@@ -84,7 +84,6 @@
     $sql2="select * from fees where fees.Reg_No=$val";
     $sql=mysqli_query($conn,$sql2);
     echo "<table><TR style='font-size:30px'><TD COLSPAN=7><CENTER><B>Fee Details<hr></td><tr style='font-size:20px'><td>Name<hr></td><td>Semester<hr></td><td>Course<hr></td><td>Date<hr></td><td>Amount<hr></td></tr>";
-   
     $row=mysqli_fetch_assoc($sql);
     while($row)
     {
@@ -92,9 +91,9 @@
     }
     echo "</table>";
    }
-    //else{
-      //window.alert("Invalid Register number");
-    //}
+    else{
+     echo ("Invalid Register number");
+    }
 ?>
 </center>
  </body>
