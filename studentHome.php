@@ -21,21 +21,18 @@
       .container p{
         line-height: 200px; 
       }
-<<<<<<< HEAD
       .round{
         border-radius: 50%;
       }
       span{
         font-size: large;
       }
-      
-=======
       .marq{
         color:red;
-        margin-left:100px;
-        margin-top:50px;
+        margin-left:1050px;
+       
       }
->>>>>>> 0e18ae307e3ee4079bf17eb369ce4f68ef0e0d6a
+      
     </style>
   </head>
   <body background="1d.jpg">
@@ -77,7 +74,6 @@
         </form> 
       </div>
     </nav>
-<<<<<<< HEAD
     <center>
       <font size=6><b>Student details </b></font>
     </center><br>
@@ -113,14 +109,14 @@
       ?>
     </center>
     <br><br><br><br><br>
-=======
     <div class="marq">
-<marquee width="40%" direction="left" height="30%">
-    Education is the most Powerful weapon 
-   which you can use to change the world
+     <p> News<p>
+<marquee width="60%" direction="up" height="70%">
+   <p>S2 University Registration started.Students are requested to 
+     complete the registration on or before 22-04-2020.</p>
+     <p>B.tech S3 result published</p>
   </marquee>
   </div>
->>>>>>> 0e18ae307e3ee4079bf17eb369ce4f68ef0e0d6a
     <div class="fixed-footer">
       <div class="container">For More Info:Conatact:+91485679</div>  
       <center>
