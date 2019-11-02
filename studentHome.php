@@ -110,7 +110,7 @@
     </center>
     <br><br><br><br><br>
     <div class="marq">
-     <p> News<p>
+     <p > News<p>
 <marquee width="60%" direction="up" height="70%">
    <p>S2 University Registration started.Students are requested to 
      complete the registration on or before 22-04-2020.</p>
