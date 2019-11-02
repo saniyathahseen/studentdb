@@ -48,7 +48,6 @@
               <span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
-              <li><a href="#">View Prifile</a></li>
               <li><a href="feeview.php">Fee Details</a></li>
               <li><a href="">Mark Details</a></li>
             </ul>
