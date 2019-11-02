@@ -78,16 +78,15 @@
     session_start();
     $val=$_POST['search'];
     $conn=mysqli_connect("localhost","root","","studdb") or die("failed:" . mysqli_connect_error());
-    $sql3="select Reg_No from student,fees where student.Reg_No= fees.Reg_No";
-    $sql4=mysqli_query($conn,$sql3);
-    if($sql4==true){
-        $sql2="select * from fees where fees.Reg_No=$val";
+    
+   $sql2="select * from fees where fees.Reg_No=$val";
+        
         $sql=mysqli_query($conn,$sql2);
-        echo "<table><TR style='font-size:30px'><TD COLSPAN=7><CENTER><B>Fee Details<hr></td><tr style='font-size:20px'><td>Name<hr></td><td>Semester<hr></td><td>Course<hr></td><td>Date<hr></td><td>Amount<hr></td></tr>";
-        $row=mysqli_fetch_assoc($sql);
-    while($row)
+        if($sql==true){
+        echo "<table style='width:50%'><TR style='font-size:30px'><TD COLSPAN=5><CENTER><B>Fee Details<hr></td><tr style='font-size:20px'><td>Name<hr></td><td>Course><hr></td><td>Semester<hr></td><td>Date<hr></td><td>Amount<hr></td></tr>";
+        while ($row1 = mysqli_fetch_array($sql))
     {
-      echo "<tr><td>".$row['Student_Name']."</td><td>".$row['Semester']."</td><td>".$row['Course']."</td><td>".$row['Date']."</td><td>".$row['Amount']."</td><td>".$row['phone']."</td><td>";
+      echo "<tr><td>".$row1['Student_Name']."</td><td>".$row1['Course']."</td><td>".$row1['Semester']."</td><td>".$row1['Date']."</td><td>".$row1['Amount']."</td><td>";;
     }
     echo "</table>";
    }
