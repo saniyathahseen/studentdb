@@ -27,11 +27,6 @@
       span{
         font-size: large;
       }
-      .marq{
-        color:red;
-        margin-left:1050px;
-       
-      }
       
     </style>
   </head>
@@ -109,6 +104,7 @@
       ?>
     </center>
     <br><br><br><br><br>
+<<<<<<< HEAD
     <div class="marq">
      <p > News<p>
 <marquee width="60%" direction="up" height="70%">
@@ -117,6 +113,8 @@
      <p>B.tech S3 result published</p>
   </marquee>
   </div>
+=======
+>>>>>>> 9c4d4f9e1c7728a1299848a98e2a4052c7f9e94a
     <div class="fixed-footer">
       <div class="container">For More Info:Conatact:+91485679</div>  
       <center>
