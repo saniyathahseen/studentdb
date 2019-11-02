@@ -85,7 +85,7 @@
 
     <td>Date Of Birth</td>
   
-    <td><input type="text" name="dob" id="dob" size="30"></td>
+    <td><input type="date" name="dob" id="dob" size="30"></td>
   
     </tr>
 
@@ -185,7 +185,7 @@
 
     <td>Date Of Joining</td>
   
-    <td><input type="text" name="doj" id="doj" size="30"></td>
+    <td><input type="date" name="doj" id="doj" size="30"></td>
   
     </tr>
 
