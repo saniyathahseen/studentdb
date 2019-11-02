@@ -73,6 +73,14 @@
         </form> 
       </div>
     </nav>
+    <div class="marq">
+     <p > News<p>
+<marquee width="60%" direction="up" height="70%">
+   <p>* S2 University Registration started.Students are requested to 
+     complete the registration on or before 22-04-2020.</p>
+     <p>* B.tech S3 result published</p>
+  </marquee>
+  </div>
     <center>
       <font size=6><b>Student details </b></font>
     </center><br>
@@ -108,14 +116,7 @@
       ?>
     </center>
     <br><br><br><br><br>
-    <div class="marq">
-     <p > News<p>
-<marquee width="60%" direction="up" height="70%">
-   <p>* S2 University Registration started.Students are requested to 
-     complete the registration on or before 22-04-2020.</p>
-     <p>* B.tech S3 result published</p>
-  </marquee>
-  </div>
+
     <div class="fixed-footer">
       <div class="container">For More Info:Conatact:+91485679</div>  
       <center>
