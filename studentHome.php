@@ -21,6 +21,7 @@
       .container p{
         line-height: 200px; 
       }
+<<<<<<< HEAD
       .round{
         border-radius: 50%;
       }
@@ -28,6 +29,13 @@
         font-size: large;
       }
       
+=======
+      .marq{
+        color:red;
+        margin-left:100px;
+        margin-top:50px;
+      }
+>>>>>>> 0e18ae307e3ee4079bf17eb369ce4f68ef0e0d6a
     </style>
   </head>
   <body background="1d.jpg">
@@ -69,6 +77,7 @@
         </form> 
       </div>
     </nav>
+<<<<<<< HEAD
     <center>
       <font size=6><b>Student details </b></font>
     </center><br>
@@ -104,6 +113,14 @@
       ?>
     </center>
     <br><br><br><br><br>
+=======
+    <div class="marq">
+<marquee width="40%" direction="left" height="30%">
+    Education is the most Powerful weapon 
+   which you can use to change the world
+  </marquee>
+  </div>
+>>>>>>> 0e18ae307e3ee4079bf17eb369ce4f68ef0e0d6a
     <div class="fixed-footer">
       <div class="container">For More Info:Conatact:+91485679</div>  
       <center>
