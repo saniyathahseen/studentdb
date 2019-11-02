@@ -84,7 +84,10 @@
     $sql2="select * from fees where fees.Reg_No=$val";
     $sql=mysqli_query($conn,$sql2);
     echo "<table><TR style='font-size:30px'><TD COLSPAN=7><CENTER><B>Fee Details<hr></td><tr style='font-size:20px'><td>Name<hr></td><td>Semester<hr></td><td>Course<hr></td><td>Date<hr></td><td>Amount<hr></td></tr>";
-    while ($row1 = mysqli_fetch_array($sql)){
+   
+    $row=mysqli_fetch_assoc($sql);
+    while($row)
+    {
       echo "<tr><td>".$row['Student_Name']."</td><td>".$row['Semester']."</td><td>".$row['Course']."</td><td>".$row['Date']."</td><td>".$row['Amount']."</td><td>".$row['phone']."</td><td>";
     }
     echo "</table>";
