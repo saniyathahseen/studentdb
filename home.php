@@ -37,8 +37,8 @@
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">View
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Student Details</a></li>
-          <li><a href="#">Fee Details</a></li>
+          <li><a href="studentView.php">Student Details</a></li>
+          <li><a href="feeview.php">Fee Details</a></li>
          
           
         </ul>
@@ -49,7 +49,7 @@
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="feedetails.php">Add Fee Details</a></li>
-          <li><a href="#">Add Marks</a></li>
+          <li><a href="mark.php">Add Marks</a></li>
          
           
         </ul>

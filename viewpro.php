@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>View Student</title>
+  <title>My Profile</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -38,26 +38,19 @@
           <a class="navbar-brand" href="#">Vitae</a>
         </div>
         
-          <div class="input-group";>
          
-            <div class="input-group-btn">
-             
-                <i class="glyphicon glyphicon-search"></i>
-              </button>
-            </div>
           </div>
         </form>
       </div>
     </nav>
     <center>
-      <font size=6><b>Student details </b></font>
+      <font size=6><b>My Profile </b></font>
     </center><br>
     <center>
     
     <?php
     session_start();
-    $val=$_POST['srh'];
-    $conn=mysqli_connect("localhost","root","","studdb") or die("failed:" . mysqli_connect_error());
+      $conn=mysqli_connect("localhost","root","","studdb") or die("failed:" . mysqli_connect_error());
 
     $sql2="select * from student where student.Reg_No=$val";
     $sql=mysqli_query($conn,$sql2);
@@ -82,6 +75,7 @@
       <?php
     }
     ?>
+    <button>Edit</button>
    
     </center>
     <br><br><br><br><br>
