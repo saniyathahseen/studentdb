@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>View Student</title>
+  <title>View fees</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -70,8 +70,7 @@
         <div class="container">Copyright &copy;Vitae</div>  
       </center>
     </div>
-  </body>
-</html>
+ 
 
 <center>
    
@@ -79,19 +78,21 @@
     session_start();
     $val=$_POST['search'];
     $conn=mysqli_connect("localhost","root","","studdb") or die("failed:" . mysqli_connect_error());
-
+    $sql3="select Reg_No from student,fees where student.Reg_No= fees.Reg_No";
+    $sql4=mysqli_query($conn,$sql3);
+    if($sql4==true){
     $sql2="select * from fees where fees.Reg_No=$val";
     $sql=mysqli_query($conn,$sql2);
+    echo "<table><TR style='font-size:30px'><TD COLSPAN=7><CENTER><B>Fee Details<hr></td><tr style='font-size:20px'><td>Name<hr></td><td>Semester<hr></td><td>Course<hr></td><td>Date<hr></td><td>Amount<hr></td></tr>";
     while ($row1 = mysqli_fetch_array($sql)){
-        ?>
-        <Form class="form-container"style="">
-        <span>Student name:</span><span id="reg"></span> <?php echo $row1['Student_Name']; ?><br><br>
-        <span>Semester:</span><span id="fname"></span><?php echo $row1['Semester']; ?><br><br>
-        <span>Course:</span><span id="lname"></span><?php echo $row1['Course']; ?><br><br>
-        <span>Date:</span><span id="dob"></span><?php echo $row1['Date']; ?><br><br>
-        <span>Amount:</span><span id="dob"></span><?php echo $row1['Amount']; ?><br><br>
-      </form>
-      <?php
+      echo "<tr><td>".$row['Student_Name']."</td><td>".$row['Semester']."</td><td>".$row['Course']."</td><td>".$row['Date']."</td><td>".$row['Amount']."</td><td>".$row['phone']."</td><td>";
     }
-    ?>
-    </center>
+    echo "</table>";
+   }
+    //else{
+      //window.alert("Invalid Register number");
+    //}
+?>
+</center>
+ </body>
+</html>
