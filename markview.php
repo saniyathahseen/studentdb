@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>View fees</title>
+  <title>View Student</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -40,23 +40,26 @@
    
   </style>
   </head>
-  <body background="fee-bicubic.jpg">
+  <body background="gd.jpg">
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="#">Vitae</a>
         </div>
-        <form class="navbar-form navbar-left" action="viewfee.php" method="post">
+        <form class="navbar-form navbar-left" action="viewmark.php" method="post">
           <div class="input-group";>
-            
-          
+            <input type="text" class="form-control" placeholder="Search" name="search">
+            <div class="input-group-btn">
+              <button class="btn btn-default" type="submit">
+                <i class="glyphicon glyphicon-search"></i>
+              </button>
             </div>
           </div>
         </form>
       </div>
     </nav>
     <center>
-      <font size=6><b>FEES STATUS</b></font>
+      <font size=6><b>MARK STATUS</b></font>
     </center><br>
    
         
@@ -70,30 +73,5 @@
         <div class="container">Copyright &copy;Vitae</div>  
       </center>
     </div>
- 
-
-<center>
-   
-    <?php
-    session_start();
-    $val=$_POST['search'];
-    $conn=mysqli_connect("localhost","root","","studdb") or die("failed:" . mysqli_connect_error());
-    
-   $sql2="select * from fees where fees.Reg_No=$val";
-        
-        $sql=mysqli_query($conn,$sql2);
-        if($sql==true){
-        echo "<table style='width:50%'><TR style='font-size:30px'><TD COLSPAN=5><CENTER><hr></td><tr style='font-size:20px'><td>Name<hr></td><td>Course><hr></td><td>Semester<hr></td><td>Date<hr></td><td>Amount<hr></td></tr>";
-        while ($row1 = mysqli_fetch_array($sql))
-    {
-      echo "<tr><td>".$row1['Student_Name']."</td><td>".$row1['Course']."</td><td>".$row1['Semester']."</td><td>".$row1['Date']."</td><td>".$row1['Amount']."</td><td>";;
-    }
-    echo "</table>";
-   }
-    else{
-     echo ("Invalid Register number");
-    }
-?>
-</center>
- </body>
+  </body>
 </html>
