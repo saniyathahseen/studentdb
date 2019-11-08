@@ -8,7 +8,7 @@ else
 {       $username=trim($_POST["username1"]);
         $password=trim($_POST["password1"]);
        
-        $sql = "SELECT username FROM student WHERE username = '$username' and password = '$password';";
+        $sql = "SELECT username FROM admin WHERE username = '$username' and password = '$password';";
        $result = mysqli_query($link, $sql);
        if ( $result)
         {

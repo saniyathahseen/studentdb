@@ -42,47 +42,7 @@
    
   <div id="mar">
 
-  <table border="2" width="60%">
-  <tr>
-  <tr>
-  <th>
-    Subjects
-  </th>
-  <th>
-  Marks
-  </th>
-  </tr>
-  <tr>
-  <td>Sub1</td>
-  <td><?php echo $s1; ?></td></tr>
- <tr> <td>Sub2</td>
-  <td><?php echo $s2; ?></td></tr>
-  <tr><td>Sub3</td>
-  <td><?php echo $s3; ?></td></tr>
-  <tr><td>Total</td>
-  <td><?php echo $obtmarks; ?></td></tr>
-  <tr><td>Grade</td>
-  <td><?php if($grade>=90)
-     {
-       echo "Grade A";
-     }
-     
-     else if($grade>=75)
-     {
-      echo "Grade B";
-    }
-    else if($grade>=65)
-    {
-     echo "Grade C";
-   }
-   else if($grade>=45)
-   {
-    echo "Grade D";
-  }  else
-   {
-     echo"fail";
-   } ?></td></tr>
-  </table>
+  
 </div>
 </body>
 </html>
