@@ -57,7 +57,7 @@
               <span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
-              <li><a href="#">Edit Details</a></li>
+              <li><a href="edit.php?var=<?php echo $username?>">Edit Details</a></li>
             </ul>
           </li>
         </ul>
