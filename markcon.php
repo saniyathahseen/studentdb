@@ -1,5 +1,4 @@
 <?php
-
 session_start();
        $reg=$_POST['txtreg'];
        $nm=$_POST['txtnm'];
@@ -19,8 +18,14 @@ $markinto=mysqli_query($conn,"insert into mark(Reg_No,Stud_Name,Sem,Course,Sub1,
 if($markinto)
 {echo '<script language="javascript">';
 echo 'alert("Saved successfully ")';
-
 echo '</script>';
 header("location:home.php") ;}
+       $grade=($obtmarks/ $totmarks)*100;
+$conn=mysqli_connect("localhost","root","","studdb") or die("failed:".mysqli_connect_error());
+$markinto=mysqli_query($conn,"insert into mark(Reg_No,Stud_Name,Sem,Course,Sub1,mark1,Sub2,mark2,Sub3,mark3,total,grade) values('$reg','$nm','$sm','$cr','$s1','$m1','$s2','$m2','$s3','$m3','$totmarks','$grade')") or die(mysqli_error($conn));
+if($markinto)
+echo '<script language="javascript">';
+echo 'alert("Saved successfully ")';
+echo '</script>';
 $conn->close();
 ?>

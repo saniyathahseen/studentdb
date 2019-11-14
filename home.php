@@ -21,6 +21,12 @@
     .container p{
         line-height: 200px; 
     }
+    .marq{
+      color:red;
+      margin-left:450px;
+      margin-top:50px;
+      size:50px;
+    }
   </style>
 </head>
 <body background="gd.jpg">
@@ -37,9 +43,9 @@
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">View
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Student Details</a></li>
-          <li><a href="#">Fee Details</a></li>
-          <li><a href="#">Due Details</a></li>
+          <li><a href="studentView.php">Student Details</a></li>
+          <li><a href="feeview.php">Fee Details</a></li>
+         
           
         </ul>
       </li>
@@ -48,8 +54,8 @@
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Forms
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Add Fee Details</a></li>
-          <li><a href="#">Add Marks</a></li>
+          <li><a href="feedetails.php">Add Fee Details</a></li>
+          <li><a href="mark.php">Add Marks</a></li>
          
           
         </ul>
@@ -67,7 +73,12 @@
     </form>
   </div>
 </nav>
-
+<div class="marq">
+<marquee width="40%" direction="left" height="30%">
+    Education is the most Powerful weapon 
+   which you can use to change the world
+  </marquee>
+  </div>
 <div class="fixed-footer">
     <div class="container">For More Info:Conatact:+91485679</div>  
   <center>

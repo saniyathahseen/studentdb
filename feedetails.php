@@ -1,14 +1,72 @@
 <html>
 
   <head>
+<script>
+  function validate()                                    
+{ 
+    var fee = document.forms["feedetails"]["textnames"];  
+    var dat= document.forms["feedetails"]["fdate"];
+    var reg= document.forms["feedetails"]["regno"]; 
+    var name = document.forms["feedetails"]["studname"];   
+    var sem =  document.forms["feedetails"]["Semester"];    
+    var corse =  document.forms["feedetails"]["Course"];  
+    var amts = document.forms["feedetails"]["amt"];
+    if (fee.value == "")                                  
+    { 
+        window.alert("Please enter a no."); 
+        fee.focus(); 
+        return false; 
+    } 
+    if (dat.value == "")                                   
+    { 
+        window.alert("Please select a date ."); 
+        dat.focus(); 
+        return false; 
+    } 
+   
+    if (reg.value == "")                           
+    { 
+        window.alert("Please enter student registration number."); 
+        reg.focus(); 
+        return false; 
+    } 
+    if (name.value == "")                                  
+    { 
+        window.alert("Please enter a student name."); 
+        name.focus(); 
+        return false; 
+    } 
+    if (sem.selectedIndex < 1)                  
+    { 
+        alert("Please select a semester."); 
+        sem.focus(); 
+        return false; 
+    } 
+    if (corse.selectedIndex < 1)                  
+    { 
+        alert("Please select a course."); 
+        corse.focus(); 
+        return false; 
+    } 
+    if (amts.value == "")                           
+    { 
+        window.alert("Please enter the fee amount paid."); 
+        amts.focus(); 
+        return false; 
+    } 
+   //alert("saved successfully");
+    return true; 
+   window.location.reload();
+}
 
-  <script type="text/javascript" src="feevalidation.js"></script>
+</script>
 
   </head>
 
-  <body style="background-image: url('fee-bicubic.jpg')" >
+  <body style="background-image: url('fee-bicubic.jpg')">
 
-  <form action="feeins.php" name="fee details" method="post"; style="margin: 95px;">
+  <form action="feeins.php" name="feedetails" method="post"; style="margin: 50px;"   onsubmit="return validate()" >
+ 
 
 <table cellpadding="6" width="40%"  align="center"
 
@@ -30,7 +88,7 @@
 
   <td>Fee No</td>
 
-  <td><input type=text name=textnames id="textname" size="30"></td>
+  <td><input type="number" name="textnames" id="textname" required minlength="6" maxlength="6" size="30" ></td>
 
   </tr>
   <tr>
@@ -47,9 +105,9 @@
 
   <td>Reg No</td>
 
-  <td><input type="text" name="regno" id="fathername"
+  <td><input type="number" name="regno" id="fathername"
 
-  size="30"></td>
+  size="30" required minlength="10" maxlength="10"></td>
 
   </tr>
 
@@ -57,7 +115,7 @@
 
   <td>Student Name</td>
 
-  <td><input type="text" name="studname" id="paddress" size="30"></td>
+  <td><input type="text" name="studname" id="paddress" size="30" required minlength="10" maxlength="20"></td>
 
   </tr>
 
@@ -116,13 +174,13 @@
 
   <td>Amount</td>
 
-  <td><input type="text" name="amt" id="Amt" size="15"></td>
+  <td><input type="number" name="amt" id="Amt" size="15" required minlength="2" maxlength="7"></td>
 
   </tr>
   
   <tr>
 
-  <td colspan="0"><input type="Reset"></td>
+  <td colspan="0"><input type="Reset" value="clear"></td>
 
   <td colspan="0"><input type="submit" value="Submit" /></td>
 
