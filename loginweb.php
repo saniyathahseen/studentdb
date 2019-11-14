@@ -101,6 +101,7 @@
             <label for="psw"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="password" required>
             <button  class="btn">Login</button>
+            <a href="student.php"> New Registration?</a>
           </form>
         </div>
       </div>

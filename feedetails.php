@@ -115,7 +115,7 @@
 
   <td>Student Name</td>
 
-  <td><input type="text" name="studname" id="paddress" size="30" required minlength="10" maxlength="20"></td>
+  <td><input type="text" name="studname" id="paddress" size="30" required minlength="4" maxlength="20"></td>
 
   </tr>
 
@@ -185,7 +185,7 @@
   <td colspan="0"><input type="submit" value="Submit" /></td>
 
   <td colspan="1">
-    <input type="button" value="Go to HomePage"></td>
+  <a href="home.php"> Go to Homepage</a></td>
 
   </tr>
 
