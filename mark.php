@@ -40,9 +40,6 @@
     
    </form> 
    
-  <div id="mar">
-
-  
-</div>
+ 
 </body>
 </html>
